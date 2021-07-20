@@ -1,0 +1,39 @@
+{
+  "name": "bluelepton",
+  "version": "0.0.5",
+  "description": "music customizer",
+  "scripts": {
+    "build": "npx tsc -p ./tsconfig.json",
+    "clean": "rm -rf ./dist",
+    "srv": "npx wds --node-resolve -c web-dev-server.config.mjs",
+    "up": "npm run clean && npm run build && npm run srv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidspencer/bluelepton.git"
+  },
+  "keywords": [
+    "music",
+    "equalizer",
+    "pitch",
+    "shifter",
+    "editor",
+    "nightcore",
+    "schadencore",
+    "pwa"
+  ],
+  "author": "sidspencer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidspencer/bluelepton/issues"
+  },
+  "homepage": "https://github.com/sidspencer/bluelepton#readme",
+  "dependencies": {
+    "lit": "^2.0.0-rc.2",
+    "lit-element": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.18",
+    "typescript": "^4.3.5"
+  }
+}
